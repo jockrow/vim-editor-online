@@ -1,34 +1,32 @@
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vim CodeMirror</title>
   
-  <link rel="stylesheet" href="https://codemirror.net/5/lib/codemirror.css" />
-  <link rel="stylesheet" href="https://codemirror.net/5/addon/dialog/dialog.css" />
-  <link rel="stylesheet" href="https://codemirror.net/5/theme/gruvbox-dark.css" />
-  <link rel="stylesheet" href="https://codemirror.net/5/doc/docs.css" />
-  <link rel="stylesheet" href="https://codemirror.net/5/addon/hint/show-hint.css" />
+  <link rel="stylesheet" href="css/codemirror.css">
+  <link rel="stylesheet" href="css/dialog.css">
+  <link rel="stylesheet" href="css/gruvbox-dark.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <link rel="stylesheet" href="css/show-hint.css">
 </head>
 <body>
   <textarea id="v"></textarea>
-  
   <p style="font-size:13px; color:white; z-index:5; top:5px; right:22px; position:absolute;">
     Key: <span id="d"></span> &nbsp; mode: <span id="m"></span>
   </p>
   
-  <script src="https://codemirror.net/5/lib/codemirror.js"></script>
-  <script src="https://codemirror.net/5/addon/selection/active-line.js"></script>
-  <script src="https://codemirror.net/5/mode/javascript/javascript.js"></script>
-  <script src="https://codemirror.net/5/mode/css/css.js"></script>
-  <script src="https://codemirror.net/5/mode/htmlmixed/htmlmixed.js"></script>
-  <script src="https://codemirror.net/5/addon/edit/matchbrackets.js"></script>
-  <script src="https://codemirror.net/5/addon/display/fullscreen.js"></script>
-  <script src="https://codemirror.net/5/addon/hint/show-hint.js"></script>
-  <script src="https://codemirror.net/5/addon/hint/javascript-hint.js"></script>
-  <script src="https://codemirror.net/5/keymap/vim.js"></script>
-  <script src="https://codemirror.net/5/addon/search/searchcursor.js"></script>
-  <script src="https://codemirror.net/5/addon/dialog/dialog.js"></script>
+  <script src="js/codemirror.js"></script>
+  <script src="js/active-line.js"></script>
+  <script src="js/javascript.js"></script>
+  <script src="js/css.js"></script>
+  <script src="js/htmlmixed.js"></script>
+  <script src="js/matchbrackets.js"></script>
+  <script src="js/fullscreen.js"></script>
+  <script src="js/show-hint.js"></script>
+  <script src="js/javascript-hint.js"></script>
+  <script src="js/vim.js"></script>
+  <script src="js/searchcursor.js"></script>
+  <script src="js/dialog.js"></script>
   
   <script>
     var editor = CodeMirror.fromTextArea(document.getElementById("v"), {
@@ -62,6 +60,7 @@
       vimMode.innerText = JSON.stringify(e);
     });
   </script>
-</body>
-</html>
 
+
+
+</body></html>
