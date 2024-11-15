@@ -15,7 +15,8 @@
 		Maps:<br>
 			Ctrl+C to Escape<br>
 			Ctrl+Space to Autocomplete<br>
-    Key: <span id="d"></span> &nbsp; mode: <span id="m"></span>
+    <!-- Key: <span id="d"></span> &nbsp; mode: <span id="m"></span> -->
+    <span id="m"></span>
   </p>
   
   <script src="js/codemirror.js"></script>
@@ -45,22 +46,22 @@
       mode: { name: "javascript", globalVars: true }
     });
 
-    var commandDisplay = document.getElementById("d");
+    // var commandDisplay = document.getElementById("d");
     var keys = "";
 
     CodeMirror.on(editor, "vim-keypress", function(key) {
       keys += key;
-      commandDisplay.innerText = keys;
+      // commandDisplay.innerText = keys;
     });
 
     CodeMirror.on(editor, "vim-command-done", function() {
       keys = "";
-      commandDisplay.innerText = keys;
+      // commandDisplay.innerText = keys;
     });
 
     var vimMode = document.getElementById("m");
     CodeMirror.on(editor, "vim-mode-change", function(e) {
-      vimMode.innerText = JSON.stringify(e);
+			vimMode.innerText = JSON.stringify(e).toString().replace(/[{"}]/g, "").toUpperCase()
     });
   </script>
 
