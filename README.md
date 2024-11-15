@@ -1,5 +1,7 @@
 # Vi Editor Online
 
+<img width="661" alt="image" src="https://portfolio-richard-martinez.netlify.app/assets/web-app-vim-editor.png">
+
 ## Description
 Vim Editor developed with Vanilla Javascript using <a href="https://codemirror.net/5/" target="_blank">Code Mirror 5 Library</a>
 
